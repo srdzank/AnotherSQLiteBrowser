@@ -18,7 +18,7 @@ brew cask install db-browser-for-sqlite
 ![alt text](https://github.com/srgank/anotherSQLIte/blob/master/images/pic3.png)
 
 
-# Use Qt framework 5.15.2 to build on Linux,Windows, MacOS X 
+# Use Qt framework 5.15.2 to build on Linux,Windows
 
 
 
