@@ -266,7 +266,6 @@ Makefile: src.pro D:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc\qmake.conf D:\Qt\5
 		D:\Qt\5.15.2\msvc2019_64\mkspecs\features\qt_config.prf \
 		D:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc\qmake.conf \
 		D:\Qt\5.15.2\msvc2019_64\mkspecs\features\spec_post.prf \
-		..\.qmake.stash \
 		D:\Qt\5.15.2\msvc2019_64\mkspecs\features\exclusive_builds.prf \
 		D:\Qt\5.15.2\msvc2019_64\mkspecs\common\msvc-version.conf \
 		D:\Qt\5.15.2\msvc2019_64\mkspecs\features\toolchain.prf \
@@ -300,6 +299,7 @@ Makefile: src.pro D:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc\qmake.conf D:\Qt\5
 		D:\Qt\5.15.2\msvc2019_64\lib\Qt5Concurrent.prl \
 		D:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.prl \
 		D:\Qt\5.15.2\msvc2019_64\lib\qtmain.prl \
+		.qmake.stash \
 		D:\Qt\5.15.2\msvc2019_64\mkspecs\features\build_pass.prf \
 		icons\icons.qrc \
 		translations\flags\flags.qrc \
@@ -495,7 +495,6 @@ D:\Qt\5.15.2\msvc2019_64\mkspecs\features\qt_functions.prf:
 D:\Qt\5.15.2\msvc2019_64\mkspecs\features\qt_config.prf:
 D:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc\qmake.conf:
 D:\Qt\5.15.2\msvc2019_64\mkspecs\features\spec_post.prf:
-..\.qmake.stash:
 D:\Qt\5.15.2\msvc2019_64\mkspecs\features\exclusive_builds.prf:
 D:\Qt\5.15.2\msvc2019_64\mkspecs\common\msvc-version.conf:
 D:\Qt\5.15.2\msvc2019_64\mkspecs\features\toolchain.prf:
@@ -529,6 +528,7 @@ D:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.prl:
 D:\Qt\5.15.2\msvc2019_64\lib\Qt5Concurrent.prl:
 D:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.prl:
 D:\Qt\5.15.2\msvc2019_64\lib\qtmain.prl:
+.qmake.stash:
 D:\Qt\5.15.2\msvc2019_64\mkspecs\features\build_pass.prf:
 icons\icons.qrc:
 translations\flags\flags.qrc:
@@ -551,6 +551,7 @@ all: release-all debug-all  FORCE
 clean: release-clean debug-clean  FORCE
 distclean: release-distclean debug-distclean  FORCE
 	-$(DEL_FILE) Makefile
+	-$(DEL_FILE) .qmake.stash
 
 release-mocclean:
 	@set MAKEFLAGS=$(MAKEFLAGS)
